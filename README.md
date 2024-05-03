@@ -11,6 +11,8 @@ Then, add it to the shoes.
 
 Use MaterialEditor to adjust its color, glossiness, metallic values as well as the main texture and normal maps.
 
+For the maps, the transparent (alpha channel) part on the texture will be culled to appear the chara's body.
+
 ## In StudioNeo
 When playing with the chara wearing Heels with Tight in StudioNeo, if some poses result in clipping between the chara and the tight, you can select the chara and enable its adv.mode of HS2PE/AIPE, go with Blend Shapes tab, choose the Tight block, and then, drag the slider of the Fatter to make the tight fatter till it doesn't clip with the chara.
 
