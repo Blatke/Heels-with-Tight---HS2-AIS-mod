@@ -4,7 +4,7 @@ This is a shoe mod for Honey Select 2/AI-Shoujo.
 ![AI_2024-05-03-15-50-55-694](https://github.com/Blatke/Heels-with-Tight---HS2-AIS-mod/assets/125734582/181db1ce-c188-4af0-b289-a16e5998a77f)
 
 ## Installation
-Check the latest version on the Release page and download the mod file. Put the .zipmod file into directory /mods/ .
+Check the latest version on the [Release](https://github.com/Blatke/Heels-with-Tight---HS2-AIS-mod/releases) page and download the mod file. Put the .zipmod file into directory /mods/ .
 
 In Chara Maker mode, go to Outfit panel, add Shoes to the chara, and search for "blake", "heels" or "tight" in the selection box to find it. 
 Then, add it to the shoes.
