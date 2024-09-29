@@ -21,6 +21,11 @@ Another way to avoid clipping is to turn OFF this option to disbale the renderer
 
 Also, there is a **Smoothness** block on Blend Shapes tab. It helps when the toes is rotated and let the heads of the heels not be smooth.
 
+## UV Template
+Here is the UV map of this mod as a template for you to draw patterns on it.
+
+![Heels with Tight](https://github.com/user-attachments/assets/43fcb2c4-b145-4e0c-bea0-4bd13e7a88ee)
+
 ## Me
 My discord server: https://discord.gg/nc5pmnf8X3
 
