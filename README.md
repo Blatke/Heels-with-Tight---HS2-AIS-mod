@@ -13,6 +13,8 @@ Check the latest version on the [Release](https://github.com/Blatke/Heels-with-T
 In Chara Maker mode, go to Outfit panel, add Shoes to the chara, and search for "**blake**", "**heels**" or "**tight**" in the selection box to find it. 
 Then, add it to the shoes.
 
+In Studio, go to the adv.mode of HS2PE/AIPE, then choose Blend Shapes, and click the **Tight** block, adjust its blendshape values if there's a need for making the tight a little fatter to prevent clipping into the body, or demand for smoothen the bottoms of the heels.
+
 Use MaterialEditor to adjust its main and emission colors, glossiness, metallic values as well as the main texture and normal maps.
 
 For the maps, the transparent (alpha channel) part on the texture will be culled to appear the chara's body.
