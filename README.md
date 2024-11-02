@@ -33,13 +33,39 @@ Here is the UV map of this mod as a template for you to draw patterns on it.
 ## For MultiMask
 On Nov.2, 2024, there was a significant update in which the mod was added with two normal maps that made some folds on the tight. If you don't need them, just adjust the intensities of Normal and DetailNormal to 0 on MaterialEditor tab.
 
+When intensity of Normal and DetailNormal is 1.0:
+
+![AI_2024-11-02-00-10-42-056](https://github.com/user-attachments/assets/b8c26115-565b-4a93-b90b-5fb1ec920f8b)
+
+When DetailNormal is 0 with Normal remaining 1.0:
+
+![AI_2024-11-02-00-10-35-937](https://github.com/user-attachments/assets/4c681881-927a-4904-b581-d80f10fadb52)
+
+
 Also, it added with a new pair of shoes namely **Heels with Tight MultiMask**, which had the same mesh as the earlier one, but used a different shader, **[Blake/Multi-Masks](https://github.com/Blatke/Multi-Mask-Shader-for-ME)**. You need to go to the shader's [release page](https://github.com/Blatke/Multi-Mask-Shader-for-ME/releases) to download the mod file for the latest version to put it into your **/mods/** folder and thus it lets MaterialEditor show the shader's properties, then you can adjust their values by yourself.
 
 Check the **demonstration video**: https://youtu.be/v_ogmAXFKD8. The shader the new shoes are using uses RGB images as normal masks to decide which parts of the normal map to show or hide the bump effect.
 
-I made 3 normal masks namely normalMask1, normalMask2 and normalMask3. You can check the following figures to know which parts these masks are referring to and affect:
+I made 3 normal masks namely **normalMask1, normalMask2 and normalMask3**. You can check the following figures to know which parts these masks are referring to and affect. For instance, if you want to hide the folds on the character's left shoulder that was painted blue on normalMask1, you need to find the property of _NormalMask1_Blue_ to adjust its value. 
 
+![AI_2024-11-02-21-00-28-355](https://github.com/user-attachments/assets/7c681293-a5ea-45df-a58a-38fe52251a41)
 
+![AI_2024-11-02-21-01-03-299](https://github.com/user-attachments/assets/d0492814-d07c-4efc-868d-2fff50f687fe)
+
+![AI_2024-11-02-21-01-36-567](https://github.com/user-attachments/assets/763cc4bc-d760-4a01-83a9-4ba7a85c765a)
+
+![AI_2024-11-02-21-01-53-808](https://github.com/user-attachments/assets/7833cacc-7de0-4a4b-bb13-3aa9d3cacfbc)
+
+![AI_2024-11-02-21-02-32-801](https://github.com/user-attachments/assets/a6dae683-2d76-4809-ae4f-f585d3a77674)
+
+![AI_2024-11-02-21-02-45-885](https://github.com/user-attachments/assets/a9c20260-2bac-49a3-99c0-e27ff0cf7610)
+
+### Use Custom Normal Masks
+You can draw your own masks and replace the original mask textures on MaterialEditor if you want to. 
+1. You can use Red, Green, Blue, Cyan, Purple, Yellow and White colors to paint your normal mask textures, thus you can have at least 7 different parts to independently affect the display of bump effect.
+2. Black color means no bump effect shown.
+3. It suggests making gradient color between one of those mask colors and black color in order to reduce the hard edges between the bump parts and no bump ones. Such like Red(1,0,0) color, you can make the gradient color from (0,0,0) to (1,0,0) or something like this.
+4. If more than one masks refer to the same one part of the normal map, each of the masks will exert the same influence on it, but the total influence will not be greater than the intensity of normal map strength.
 
 ## Me
 My discord server: https://discord.gg/nc5pmnf8X3
