@@ -31,7 +31,7 @@ Here is the UV map of this mod as a template for you to draw patterns on it.
 ![Heels with Tight](https://github.com/user-attachments/assets/43fcb2c4-b145-4e0c-bea0-4bd13e7a88ee)
 
 ## For MultiMask
-On Nov.2, 2024, there was a significant update in which the mod was added with two normal maps that made some folds on the tight. If you don't need them, just adjust the instensities of Normal and DetailNormal to 0 on MaterialEditor tab.
+On Nov.2, 2024, there was a significant update in which the mod was added with two normal maps that made some folds on the tight. If you don't need them, just adjust the intensities of Normal and DetailNormal to 0 on MaterialEditor tab.
 
 Also, it added with a new pair of shoes namely **Heels with Tight MultiMask**, which had the same mesh as the earlier one, but used a different shader, **[Blake/Multi-Masks](https://github.com/Blatke/Multi-Mask-Shader-for-ME)**. You need to go to the shader's [release page](https://github.com/Blatke/Multi-Mask-Shader-for-ME/releases) to download the mod file for the latest version to put it into your **/mods/** folder and thus it lets MaterialEditor show the shader's properties, then you can adjust their values by yourself.
 
