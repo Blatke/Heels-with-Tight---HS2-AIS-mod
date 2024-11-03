@@ -72,10 +72,7 @@ You can draw your own masks and replace the original mask textures on MaterialEd
 5. If more than one masks refer to the same one part of the normal map that means the parts indicated by masks are overlapped, each of the masks will exert the same influence on it, but the total influence will not be greater than the intensity of normal map strength.
 
 ### Color Masks
-In the update on Nov.2, 2024, with adopting **[Blake/Multi-Masks](https://github.com/Blatke/Multi-Mask-Shader-for-ME)**, the function of color masks was introduced. Color masks are used to affect the colors on the Albedo texture (main texture) as well as the tint by indicating which part to paint what color. Let us say if using a RGB flag (see the figure below) as a color mask, there are Red (1,0,0), Green (0,1,0) and Blue (0,0,1) colors. We import it into **Albedo Mask 1** on MaterialEditor tab, and adjust the colors for Mask1_Red, Mask1_Green and Mask1_Blue to any colors, then the parts of the material overlapping with those parts in these three colors are changed.
-
-![us](https://github.com/user-attachments/assets/3cb0ee30-43e9-4cee-8885-a92f5e583722)
-![rgb_flag_by_jordanli04_deoogti-414w-2x](https://github.com/user-attachments/assets/b1040878-3288-412f-a348-c28ef99a6db9)
+In the update on Nov.2, 2024, with adopting **[Blake/Multi-Masks](https://github.com/Blatke/Multi-Mask-Shader-for-ME)**, the function of color masks was introduced. Color masks are used to affect the colors on the Albedo texture (main texture) as well as the tint by indicating which part to paint what color. Let us say if using a RGB flag as a color mask, there are Red (1,0,0), Green (0,1,0) and Blue (0,0,1) colors. We import it into **Albedo Mask 1** on MaterialEditor tab, and adjust the colors for Mask1_Red, Mask1_Green and Mask1_Blue to any colors, then the parts of the material overlapping with those parts in these three colors are changed.
 
 For **Albedo Mask 2**, the options with the names starting with "**Mask2_**" can manipulate. But note that **Albedo Mask 1** is to **blend** color with the Albedo texture and tint color, whereas **Albedo Mask 2** is to **replace** the color with a designated one.
 
