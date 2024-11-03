@@ -65,9 +65,9 @@ I made 3 normal masks namely **normalMask1, normalMask2 and normalMask3**. You c
 ### Use Custom Normal Masks
 You can draw your own masks and replace the original mask textures on MaterialEditor if you want to. 
 1. You can use Red, Green, Blue, Cyan, Purple, Yellow and White colors to paint your normal mask textures, thus you can have at least 7 different parts to independently affect the display of bump effect.
-2. Black color means no bump effect shown.
+2. Black color means no bump effect should be shown.
 3. It suggests making gradient color between one of those mask colors and black color in order to reduce the hard edges between the bump parts and no bump ones. Such like Red(1,0,0) color, you can make the gradient color from (0,0,0) to (1,0,0) or something like this.
-4. If more than one masks refer to the same one part of the normal map, each of the masks will exert the same influence on it, but the total influence will not be greater than the intensity of normal map strength.
+4. If more than one masks refer to the same one part of the normal map that means the parts indicated by masks are overlapped, each of the masks will exert the same influence on it, but the total influence will not be greater than the intensity of normal map strength.
 
 ## Me
 My discord server: https://discord.gg/nc5pmnf8X3
