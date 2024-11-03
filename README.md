@@ -67,20 +67,28 @@ I made 3 normal masks namely **normalMask1, normalMask2 and normalMask3**. You c
 You can draw your own masks and replace the original mask textures on MaterialEditor if you want to. 
 1. You can use Red, Green, Blue, Cyan, Purple, Yellow and White colors to paint your normal mask textures, thus you can have at least 7 different parts to independently affect the display of bump effect.
 2. Black color means no bump effect should be shown.
-3. It suggests making gradient color between one of those mask colors and black color in order to reduce the hard edges between the bump parts and no bump ones. Such like Red(1,0,0) color, you can make the gradient colors from (0,0,0) to (1,0,0) or something like this. When using gradient colors on a mask, it suggests .png format for the mask image instead of .jpg, for there might be some Moire patterns interfering the mask's performance.
-4. If more than one masks refer to the same one part of the normal map that means the parts indicated by masks are overlapped, each of the masks will exert the same influence on it, but the total influence will not be greater than the intensity of normal map strength.
+3. It suggests making gradient color between one of those mask colors and black color in order to reduce the hard edges between the bump parts and no bump ones. Such like Red(1,0,0) color, you can make the gradient colors from (0,0,0) to (1,0,0) or something like this.
+4. It suggests .png format for the mask image instead of .jpg, for there might be some Moire patterns or color deviation interfering the mask's performance.
+5. If more than one masks refer to the same one part of the normal map that means the parts indicated by masks are overlapped, each of the masks will exert the same influence on it, but the total influence will not be greater than the intensity of normal map strength.
 
 ### Color Masks
-In the update on Nov.2, 2024, with adopting **[Blake/Multi-Masks](https://github.com/Blatke/Multi-Mask-Shader-for-ME)**, the function of color masks was introduced. Color masks are used to affect the colors on the Albedo texture (main texture) as well as the tint by indicating which part to paint what color. Let us say if using a CMYK version of US national flag as a color mask, there are cyan-like (0,0.6235,0.8863), purple-like (0.902, 0, 0.490) and white (1,1,1) colors. We import it into **Albedo Mask 1** on MaterialEditor tab, and adjust the colors for Mask1_Cyan, Mask1_Purple and Mask1_White to any colors, then the parts of the material overlapping with those parts in these three colors are changed.
+In the update on Nov.2, 2024, with adopting **[Blake/Multi-Masks](https://github.com/Blatke/Multi-Mask-Shader-for-ME)**, the function of color masks was introduced. Color masks are used to affect the colors on the Albedo texture (main texture) as well as the tint by indicating which part to paint what color. Let us say if using a RGB flag (see the figure below) as a color mask, there are Red (1,0,0), Green (0,1,0) and Blue (0,0,1) colors. We import it into **Albedo Mask 1** on MaterialEditor tab, and adjust the colors for Mask1_Red, Mask1_Green and Mask1_Blue to any colors, then the parts of the material overlapping with those parts in these three colors are changed.
+
+![us](https://github.com/user-attachments/assets/3cb0ee30-43e9-4cee-8885-a92f5e583722)
+![rgb_flag_by_jordanli04_deoogti-414w-2x](https://github.com/user-attachments/assets/b1040878-3288-412f-a348-c28ef99a6db9)
 
 For **Albedo Mask 2**, the options with the names starting with "**Mask2_**" can manipulate. But note that **Albedo Mask 1** is to **blend** color with the Albedo texture and tint color, whereas **Albedo Mask 2** is to **replace** the color with a designated one.
+
+In addition, **Albedo Mask 2** supports emission. You can adjust the values in Mask2_Red_Emission or some other options like this to strenghen the light intensity on the corresponding parts indicated by this color mask.
+
+You can check the demonstration video: 
 
 
 #### Use Custom Color Masks
 The images using as color masks should be:
 1. Including the patterns in at least one of Red, Green, Blue, Cyan, Purple, Yellow and White colors, and the gradient colors between one of them and black color such like the colors from (0,0,0) to (1,0,0).
 2. All the parts in black color means no effect exerted by the color mask, so Tint Color and Albedo texture have the total control.
-3. When using gradient colors, it suggests .png format for the mask image instead of .jpg, for there might be some Moire patterns interfering the mask's performance. 
+3. It suggests .png format for the mask image instead of .jpg, for there might be some Moire patterns or color deviation interfering the mask's performance.
 
 ## Me
 My discord server: https://discord.gg/nc5pmnf8X3
