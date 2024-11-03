@@ -81,8 +81,7 @@ For **Albedo Mask 2**, the options with the names starting with "**Mask2_**" can
 
 In addition, **Albedo Mask 2** supports emission. You can adjust the values in Mask2_Red_Emission or some other options like this to strenghen the light intensity on the corresponding parts indicated by this color mask.
 
-You can check the demonstration video: 
-
+You can check the demonstration video: https://youtu.be/-1iLz9M2pEI
 
 #### Use Custom Color Masks
 The images using as color masks should be:
